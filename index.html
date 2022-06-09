@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       	<meta name="name" content="Harold Suquillo">
+		<meta name="description" content="Webpage generates Random Passwords">
+		<title>Password generator</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="index.css" type="text/css">
+	</head>
+	<body>
+        <section id="main-container">
+            <div class="inner-container" id="heading-container">
+                <h1>Generate a <br><span>random password</span></h1>
+                <p id="text">Never use an insecure password again</p>
+
+                <form id="password-form">
+                    
+                    <button>
+                        <img id="btn-img" src="img/Icon.png" alt="complementary image to sumbit button">
+                        Generate password
+                    </button>
+                    <input  id="input-num" min="1" max="20" type="number" value="" name="length" autocomplete="off" autofocus placeholder="Enter required length" required v-on:submit.prevent>
+                </form>
+                <div id="h-line"></div>
+            </div>
+            <div class="inner-container" id="password-container">
+                <p class="passwords" id="p1"><img src="img/icon2.png"></p>
+                <p class="passwords" id="p2"><img src="img/icon2.png"></p>
+                <p class="passwords" id="p3"><img src="img/icon2.png"></p>
+                <p class="passwords" id="p4"><img src="img/icon2.png"></p>
+            </div>
+        </section>
+
+	</body>
+    <script src="index.js"></script>
+</html>
+

@@ -1,0 +1,143 @@
+:root{
+    --gradient: linear-gradient(to left, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    --clr-bacground-body: #1F2937;
+    --clr-background-secondary: #1C1C1C;
+    --ff-primary-font: 'Karla', sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-primary-font);
+
+}
+html{
+
+    background-color: var(--clr-background-secondary);
+    color: white;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+h1{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+span{
+    color: #10B981;
+}
+#main-container{
+    background-color: var(--clr-bacground-body);
+
+}
+
+
+#main-container{
+    margin-inline: auto;
+    width: min(90%, 35rem);
+    height: 35em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px #fff;
+}
+
+
+
+#text{
+    margin-top: .5rem;
+    margin-bottom: 2.5rem;
+}
+
+.inner-container{
+    width: 90%;
+    margin: 0 auto;
+    overflow-x: scroll;
+
+}
+
+form{
+    display: flex;
+    justify-content: space-around;
+    overflow-x: scroll;
+}
+
+button{
+    background-color: #10B981;
+    padding: .4em 1em;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    height: 2.5em;
+    width: 15em;
+}
+
+button:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+#input-num{
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    height: 2.5em;
+    width: 15em;
+
+}
+/*Media Query to align form elements for smaller screens*/
+@media (max-width: 35em){
+    form{
+        flex-direction: column;
+        align-items: center;
+    }
+    button{
+        margin-bottom: 1em;
+    }
+
+}
+#h-line{
+    margin-top: 2em;
+    border-bottom: .1em solid #2F3E53;
+    width: 100%;
+}
+
+
+#password-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+.passwords{
+    background-color: #273549;
+    line-height: 2.5em;
+    color: #10B981;
+    text-align: center;
+    border-radius: 6px;
+    width: 15em;
+    margin: .3em;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
