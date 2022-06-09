@@ -70,12 +70,13 @@ form{
 
 button{
     background-color: #10B981;
-    padding: .4em 1em;
     border-radius: 6px;
     border: none;
     cursor: pointer;
-    height: 2.5em;
+    height: 1.9em;
     width: 15em;
+    color: #fff;
+    font-size: 1.1em;
 }
 
 button:active {
@@ -104,7 +105,7 @@ button:active {
 
 }
 #h-line{
-    margin-top: 2em;
+    margin-top: 3em;
     border-bottom: .1em solid #2F3E53;
     width: 100%;
 }
